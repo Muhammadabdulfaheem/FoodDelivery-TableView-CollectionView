@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChiefCollectionCell" customModule="FoodDeliveryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="123"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqE-eo-VNr">
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="123"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NTW-Lp-okt">
+                                <rect key="frame" x="8" y="40" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="27n-5x-AxB"/>
+                                    <constraint firstAttribute="height" constant="65" id="Z1y-V3-wqX"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BAG-7B-z6P">
+                                <rect key="frame" x="81" y="40" width="227" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8T-23-kjD">
+                                        <rect key="frame" x="0.0" y="0.0" width="227" height="18.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jw-7E-Ajz">
+                                        <rect key="frame" x="0.0" y="23.5" width="227" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRA-JK-8zC">
+                                        <rect key="frame" x="0.0" y="46.5" width="227" height="18.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.6148123741" green="0.1017967239" blue="0.1002308354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BAG-7B-z6P" secondAttribute="trailing" constant="8" id="NGu-Zz-4mB"/>
+                            <constraint firstItem="BAG-7B-z6P" firstAttribute="leading" secondItem="NTW-Lp-okt" secondAttribute="trailing" constant="8" id="ReP-BQ-FK7"/>
+                            <constraint firstItem="NTW-Lp-okt" firstAttribute="top" secondItem="DqE-eo-VNr" secondAttribute="top" constant="40" id="U1s-wD-4kd"/>
+                            <constraint firstItem="BAG-7B-z6P" firstAttribute="top" secondItem="NTW-Lp-okt" secondAttribute="top" id="hNW-LD-u0r"/>
+                            <constraint firstItem="NTW-Lp-okt" firstAttribute="leading" secondItem="DqE-eo-VNr" secondAttribute="leading" constant="8" id="hcb-eA-dSn"/>
+                            <constraint firstItem="BAG-7B-z6P" firstAttribute="bottom" secondItem="NTW-Lp-okt" secondAttribute="bottom" id="lUR-QF-ymO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DqE-eo-VNr" secondAttribute="trailing" id="0pX-Rb-rcg"/>
+                <constraint firstItem="DqE-eo-VNr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FBA-Ib-o3U"/>
+                <constraint firstItem="DqE-eo-VNr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SAQ-1R-ErK"/>
+                <constraint firstAttribute="bottom" secondItem="DqE-eo-VNr" secondAttribute="bottom" id="ZOr-v0-F5q"/>
+            </constraints>
+            <size key="customSize" width="316" height="123"/>
+            <connections>
+                <outlet property="lblCalories" destination="MRA-JK-8zC" id="ea2-7o-SSq"/>
+                <outlet property="lblDescription" destination="0jw-7E-Ajz" id="AQh-Ry-dQw"/>
+                <outlet property="lblImages" destination="NTW-Lp-okt" id="IvD-0S-gOR"/>
+                <outlet property="lblTitle" destination="N8T-23-kjD" id="cXn-a1-vy5"/>
+            </connections>
+            <point key="canvasLocation" x="198.55072463768118" y="94.084821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
